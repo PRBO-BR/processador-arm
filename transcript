@@ -873,3 +873,40 @@ add wave -position 7  sim:/testbench/dut/arm/dp/alu/b
 add wave -position end  sim:/testbench/dut/arm/ALUResult
 
 run
+# Compile of arm_single.sv was successful.
+# Load canceled
+vsim -gui ab_work_trabalho.testbench
+# End time: 17:53:50 on Oct 24,2020, Elapsed time: 0:46:47
+# Errors: 0, Warnings: 2
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 17:53:50 on Oct 24,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'ALUControl'. The port definition is at: D:/IFES/ARQ/TRABALHO/arm_single.sv(316).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/arm/dp File: D:/IFES/ARQ/TRABALHO/arm_single.sv Line: 168
+add wave -position end  sim:/testbench/dut/arm/clk
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position 2  sim:/testbench/dut/arm/ALUFlags
+add wave -position 3  sim:/testbench/dut/arm/ALUControl
+add wave -position 5  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+add wave -position 6  sim:/testbench/dut/arm/dp/alu/a
+add wave -position 7  sim:/testbench/dut/arm/dp/alu/b
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+run
