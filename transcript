@@ -1,0 +1,875 @@
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 18:16:14 on Oct 19,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end sim:/testbench/dut/*
+run -next
+run -next
+run -next
+step
+step
+run -next
+run -next
+run -next
+run -next
+run -next
+vsim -gui ab_work_trabalho.testbench
+# End time: 18:30:36 on Oct 19,2020, Elapsed time: 0:14:22
+# Errors: 0, Warnings: 5
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 18:30:36 on Oct 19,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end sim:/testbench/dut/arm/*
+run -continue
+run -continue
+vsim -gui ab_work_trabalho.testbench
+# End time: 18:32:58 on Oct 19,2020, Elapsed time: 0:02:22
+# Errors: 0, Warnings: 1
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 18:32:58 on Oct 19,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end sim:/testbench/dut/arm/*
+# Break key hit
+# Break key hit
+# Break key hit
+run -all
+# Simulation succeeded
+# ** Note: $stop    : D:/IFES/ARQ/TRABALHO/arm_single.sv(105)
+#    Time: 205 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at D:/IFES/ARQ/TRABALHO/arm_single.sv line 105
+vsim -gui ab_work_trabalho.testbench
+# End time: 21:01:33 on Oct 19,2020, Elapsed time: 2:28:35
+# Errors: 0, Warnings: 1
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 21:01:33 on Oct 19,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+vsim -gui ab_work_trabalho.testbench
+# End time: 21:01:55 on Oct 19,2020, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 1
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 21:01:55 on Oct 19,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+run -all
+# Simulation succeeded
+# ** Note: $stop    : D:/IFES/ARQ/TRABALHO/arm_single.sv(105)
+#    Time: 205 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at D:/IFES/ARQ/TRABALHO/arm_single.sv line 105
+# Compile of arm_single.sv was successful.
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# End time: 11:02:04 on Oct 20,2020, Elapsed time: 14:00:09
+# Errors: 0, Warnings: 3
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 11:02:04 on Oct 20,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end sim:/testbench/dut/arm/*
+run -all
+# Simulation succeeded
+# ** Note: $stop    : D:/IFES/ARQ/TRABALHO/arm_single.sv(105)
+#    Time: 205 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at D:/IFES/ARQ/TRABALHO/arm_single.sv line 105
+vsim -gui ab_work_trabalho.testbench
+# End time: 17:39:09 on Oct 22,2020, Elapsed time: 54:37:05
+# Errors: 0, Warnings: 1
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 17:39:09 on Oct 22,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/Instr
+run -all
+# Simulation succeeded
+# ** Note: $stop    : D:/IFES/ARQ/TRABALHO/arm_single.sv(105)
+#    Time: 205 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at D:/IFES/ARQ/TRABALHO/arm_single.sv line 105
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# End time: 12:03:42 on Oct 23,2020, Elapsed time: 18:24:33
+# Errors: 0, Warnings: 3
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 12:03:42 on Oct 23,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/c/Instr
+add wave -position end  sim:/testbench/dut/arm/dp/alu/Result
+add wave -position end  sim:/testbench/dut/arm/dp/alu/neg
+add wave -position end  sim:/testbench/dut/arm/dp/alu/zero
+add wave -position end  sim:/testbench/dut/arm/dp/alu/carry
+add wave -position end  sim:/testbench/dut/arm/dp/alu/overflow
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+add wave -position end  sim:/testbench/dut/arm/dp/rf/r15
+run -all
+# Simulation succeeded
+# ** Note: $stop    : D:/IFES/ARQ/TRABALHO/arm_single.sv(105)
+#    Time: 255 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at D:/IFES/ARQ/TRABALHO/arm_single.sv line 105
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# End time: 12:23:54 on Oct 23,2020, Elapsed time: 0:20:12
+# Errors: 0, Warnings: 2
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 12:23:54 on Oct 23,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/Instr
+run -next
+run
+add wave -position end  sim:/testbench/dut/arm/dp/ALUResult
+run -all
+# Simulation succeeded
+# ** Note: $stop    : D:/IFES/ARQ/TRABALHO/arm_single.sv(105)
+#    Time: 275 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at D:/IFES/ARQ/TRABALHO/arm_single.sv line 105
+add wave -position end  sim:/testbench/dut/arm/dp/alu/Result
+run -all
+vsim -gui ab_work_trabalho.testbench
+# End time: 12:32:12 on Oct 23,2020, Elapsed time: 0:08:18
+# Errors: 0, Warnings: 1
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 12:32:12 on Oct 23,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/Instr
+add wave -position end  sim:/testbench/dut/PC
+add wave -position end  sim:/testbench/dut/arm/dp/alu/Result
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+add wave -position end  sim:/testbench/dut/arm/dp/rf/r15
+run -all
+# Simulation succeeded
+# ** Note: $stop    : D:/IFES/ARQ/TRABALHO/arm_single.sv(105)
+#    Time: 275 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at D:/IFES/ARQ/TRABALHO/arm_single.sv line 105
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# End time: 12:49:57 on Oct 23,2020, Elapsed time: 0:17:45
+# Errors: 0, Warnings: 2
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 12:49:57 on Oct 23,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+add wave -position 0  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/PC
+add wave -position end  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+run -all
+# Simulation succeeded
+# ** Note: $stop    : D:/IFES/ARQ/TRABALHO/arm_single.sv(105)
+#    Time: 275 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at D:/IFES/ARQ/TRABALHO/arm_single.sv line 105
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# End time: 12:59:34 on Oct 23,2020, Elapsed time: 0:09:37
+# Errors: 0, Warnings: 2
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 12:59:34 on Oct 23,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+add wave -position 0  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/dp/ALUResult
+add wave -position end  sim:/testbench/dut/arm/dp/alu/Result
+add wave -position 0  sim:/testbench/dut/clk
+add wave -position end  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+add wave -position 5  sim:/testbench/dut/arm/PC
+run -all
+# Simulation succeeded
+# ** Note: $stop    : D:/IFES/ARQ/TRABALHO/arm_single.sv(105)
+#    Time: 275 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at D:/IFES/ARQ/TRABALHO/arm_single.sv line 105
+# Compile of arm_single.sv was successful.
+# Break key hit
+step
+# Next activity is in 5 ps.
+step
+step
+step
+step
+step
+vsim -gui ab_work_trabalho.testbench
+# End time: 13:13:30 on Oct 23,2020, Elapsed time: 0:13:56
+# Errors: 0, Warnings: 3
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 13:13:30 on Oct 23,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+# Compile of arm_single.sv was successful.
+# Compile of arm_single.sv was successful.
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# End time: 13:16:06 on Oct 23,2020, Elapsed time: 0:02:36
+# Errors: 0, Warnings: 4
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 13:16:06 on Oct 23,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/PC
+add wave -position 0  sim:/testbench/dut/arm/clk
+add wave -position 1  sim:/testbench/dut/arm/reset
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+run -all
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# End time: 13:41:36 on Oct 23,2020, Elapsed time: 0:25:30
+# Errors: 0, Warnings: 2
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 13:41:36 on Oct 23,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/clk
+add wave -position end  sim:/testbench/dut/arm/PC
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+add wave -position end  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+run
+vsim -gui ab_work_trabalho.testbench
+# End time: 16:16:14 on Oct 23,2020, Elapsed time: 2:34:38
+# Errors: 0, Warnings: 1
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 16:16:14 on Oct 23,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/PC
+add wave -position 0  sim:/testbench/dut/arm/Instr
+add wave -position 0  sim:/testbench/dut/arm/clk
+add wave -position end  sim:/testbench/dut/arm/dp/alu/Result
+add wave -position 3  sim:/testbench/dut/arm/dp/rf/rf
+add wave -position 3  sim:/testbench/dut/arm/dp/rf/r15
+run
+# Compile of arm_single.sv failed with 1 errors.
+# Compile of arm_single.sv failed with 1 errors.
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# End time: 14:10:06 on Oct 24,2020, Elapsed time: 21:53:52
+# Errors: 0, Warnings: 4
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 14:10:06 on Oct 24,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/clk
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+add wave -position end  sim:/testbench/dut/arm/ALUFlags
+add wave -position end  sim:/testbench/dut/arm/ALUControl
+add wave -position end  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+run
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# End time: 14:59:15 on Oct 24,2020, Elapsed time: 0:49:09
+# Errors: 0, Warnings: 2
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 14:59:15 on Oct 24,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/clk
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+add wave -position end  sim:/testbench/dut/arm/ALUFlags
+add wave -position end  sim:/testbench/dut/arm/ALUControl
+add wave -position end  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+run
+# Compile of arm_single.sv was successful.
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# End time: 15:24:59 on Oct 24,2020, Elapsed time: 0:25:44
+# Errors: 0, Warnings: 3
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 15:24:59 on Oct 24,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/clk
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+run
+add wave -position end  sim:/testbench/dut/arm/dp/alu/a
+add wave -position end  sim:/testbench/dut/arm/dp/alu/b
+vsim -gui ab_work_trabalho.testbench
+# End time: 15:27:37 on Oct 24,2020, Elapsed time: 0:02:38
+# Errors: 0, Warnings: 1
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 15:27:37 on Oct 24,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/clk
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+add wave -position end  sim:/testbench/dut/arm/ALUControl
+add wave -position end  sim:/testbench/dut/arm/dp/SrcA
+add wave -position end  sim:/testbench/dut/arm/dp/SrcB
+add wave -position 3  sim:/testbench/dut/arm/dp/rf/rf
+add wave -position 3  sim:/testbench/dut/arm/dp/rf/r15
+run
+run
+vsim -gui ab_work_trabalho.testbench
+# End time: 15:49:47 on Oct 24,2020, Elapsed time: 0:22:10
+# Errors: 0, Warnings: 1
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 15:49:47 on Oct 24,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/clk
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/ALUControl
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+add wave -position end sim:/testbench/dut/arm/dp/rf/*
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+add wave -position 4  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position 5  sim:/testbench/dut/arm/dp/SrcA
+add wave -position 6  sim:/testbench/dut/arm/dp/SrcB
+run
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# End time: 15:57:31 on Oct 24,2020, Elapsed time: 0:07:44
+# Errors: 0, Warnings: 2
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 15:57:31 on Oct 24,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/clk
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+add wave -position 2  sim:/testbench/dut/arm/ALUFlags
+add wave -position 3  sim:/testbench/dut/arm/ALUControl
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+add wave -position 5  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position 6  sim:/testbench/dut/arm/dp/alu/a
+add wave -position 7  sim:/testbench/dut/arm/dp/alu/b
+run
+# Compile of arm_single.sv failed with 9 errors.
+# Compile of arm_single.sv failed with 9 errors.
+# Compile of arm_single.sv failed with 9 errors.
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# End time: 16:23:40 on Oct 24,2020, Elapsed time: 0:26:09
+# Errors: 0, Warnings: 5
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 16:23:40 on Oct 24,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/clk
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+add wave -position 2  sim:/testbench/dut/arm/ALUFlags
+add wave -position 3  sim:/testbench/dut/arm/ALUControl
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+add wave -position 5  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position 6  sim:/testbench/dut/arm/dp/alu/a
+add wave -position 7  sim:/testbench/dut/arm/dp/alu/b
+run
+# Compile of arm_single.sv was successful.
+vsim -gui ab_work_trabalho.testbench
+# End time: 16:29:43 on Oct 24,2020, Elapsed time: 0:06:03
+# Errors: 0, Warnings: 2
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 16:29:43 on Oct 24,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/clk
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+add wave -position 2  sim:/testbench/dut/arm/ALUFlags
+add wave -position 3  sim:/testbench/dut/arm/ALUControl
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+add wave -position 5  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position 6  sim:/testbench/dut/arm/dp/alu/a
+add wave -position 7  sim:/testbench/dut/arm/dp/alu/b
+run
+vsim -gui ab_work_trabalho.testbench
+# End time: 16:38:12 on Oct 24,2020, Elapsed time: 0:08:29
+# Errors: 0, Warnings: 1
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 16:38:12 on Oct 24,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/clk
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+add wave -position 2  sim:/testbench/dut/arm/ALUFlags
+add wave -position 3  sim:/testbench/dut/arm/ALUControl
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+add wave -position 5  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position 6  sim:/testbench/dut/arm/dp/alu/a
+add wave -position 7  sim:/testbench/dut/arm/dp/alu/b
+run
+# Compile of arm_single.sv was successful with warnings.
+vsim -gui ab_work_trabalho.testbench
+# End time: 16:56:22 on Oct 24,2020, Elapsed time: 0:18:10
+# Errors: 0, Warnings: 2
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 16:56:22 on Oct 24,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/clk
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+add wave -position 2  sim:/testbench/dut/arm/ALUFlags
+add wave -position 3  sim:/testbench/dut/arm/ALUControl
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+add wave -position 5  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position 6  sim:/testbench/dut/arm/dp/alu/a
+add wave -position 7  sim:/testbench/dut/arm/dp/alu/b
+run
+# Compile of arm_single.sv was successful with warnings.
+vsim -gui ab_work_trabalho.testbench
+# End time: 17:07:03 on Oct 24,2020, Elapsed time: 0:10:41
+# Errors: 0, Warnings: 2
+# vsim -gui ab_work_trabalho.testbench 
+# Start time: 17:07:03 on Oct 24,2020
+# Loading sv_std.std
+# Loading ab_work_trabalho.testbench
+# Loading ab_work_trabalho.top
+# Loading ab_work_trabalho.arm
+# Loading ab_work_trabalho.controller
+# Loading ab_work_trabalho.decoder
+# Loading ab_work_trabalho.condlogic
+# Loading ab_work_trabalho.flopenr
+# Loading ab_work_trabalho.condcheck
+# Loading ab_work_trabalho.datapath
+# Loading ab_work_trabalho.mux2
+# Loading ab_work_trabalho.flopr
+# Loading ab_work_trabalho.adder
+# Loading ab_work_trabalho.regfile
+# Loading ab_work_trabalho.extend
+# Loading ab_work_trabalho.alu
+# Loading ab_work_trabalho.imem
+# Loading ab_work_trabalho.dmem
+add wave -position end  sim:/testbench/dut/arm/clk
+add wave -position end  sim:/testbench/dut/arm/Instr
+add wave -position 2  sim:/testbench/dut/arm/ALUFlags
+add wave -position 3  sim:/testbench/dut/arm/ALUControl
+add wave -position 5  sim:/testbench/dut/arm/dp/rf/r15
+add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
+add wave -position 6  sim:/testbench/dut/arm/dp/alu/a
+add wave -position 7  sim:/testbench/dut/arm/dp/alu/b
+add wave -position end  sim:/testbench/dut/arm/ALUResult
+
+run
