@@ -74,8 +74,18 @@
 //    1101  Signed less/equal             N != V | Z = 1
 //    1110  Always                        any
 
-//Implementação de ALUControl com 4 bits e EOR
-//Teste de implementação do TST
+//Implementação de ALUControl com 4 bits
+// Implementação do EOR
+//Implementação do TST
+//E04F400F
+//E2845000
+//E284400A
+//E2855005
+//E0046005
+//E1847005
+//E0448005
+//E0249005
+//E114A005
 
 module testbench();
 
