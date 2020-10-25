@@ -74,6 +74,19 @@
 //    1101  Signed less/equal             N != V | Z = 1
 //    1110  Always                        any
 
+//Implementação de ALUControl com 4 bits
+// Implementação do EOR
+//Implementação do TST
+//E04F400F
+//E2845000
+//E284400A
+//E2855005
+//E0046005
+//E1847005
+//E0448005
+//E0249005
+//E114A005
+
 module testbench();
 
   logic        clk;
@@ -159,7 +172,7 @@ module arm(input  logic        clk, reset,
   logic       RegWrite, 
               ALUSrc, MemtoReg, PCSrc;
   logic [1:0] RegSrc, ImmSrc;
-  logic [3:0] ALUControl;
+  logic [4:0] ALUControl;
 
   controller c(clk, reset, Instr[31:12], ALUFlags, 
                RegSrc, RegWrite, ImmSrc, 
@@ -180,7 +193,7 @@ module controller(input  logic         clk, reset,
                   output logic         RegWrite,
                   output logic [1:0]   ImmSrc,
                   output logic         ALUSrc, 
-                  output logic [3:0]   ALUControl,
+                  output logic [4:0]   ALUControl,
                   output logic         MemWrite, MemtoReg,
                   output logic         PCSrc);
 
@@ -202,7 +215,7 @@ module decoder(input  logic [1:0] Op,
                output logic       PCS, RegW, MemW,
                output logic       MemtoReg, ALUSrc,
                output logic [1:0] ImmSrc, RegSrc, 
-	       output logic [3:0] ALUControl);
+	       output logic [4:0] ALUControl);
 
   logic [9:0] controls;
   logic       Branch, ALUOp;
@@ -231,22 +244,34 @@ module decoder(input  logic [1:0] Op,
   // ALU Decoder             
   always_comb
     if (ALUOp) begin                 // which DP Instr?
+
+//////////////
+
+//      5'b00000: Result = sum;
+//      5'b00001: Result = sum;
+//      5'b00010: Result = a & b;
+//      5'b00011: Result = a | b;
+//      5'b00110: Result = a ^ b;
+//      5'b00111: Result = a & b;
+
+///////////
       case(Funct[4:1]) 
-  	    4'b0100: ALUControl = 4'b0000; // ADD
-  	    4'b0010: ALUControl = 4'b0001; // SUB
-          4'b0000: ALUControl = 4'b0010; // AND
-  	    4'b1100: ALUControl = 4'b0011; // ORR
-	    //4'b1100: ALUControl = 3'b0011; // ORR
-  	    default: ALUControl = 4'bxxxx;  // unimplemented 
+  	    4'b0100: ALUControl = 5'b00000; // ADD
+  	    4'b0010: ALUControl = 5'b00001; // SUB
+            4'b0000: ALUControl = 5'b00010; // AND
+  	    4'b1100: ALUControl = 5'b00011; // ORR
+	    4'b0001: ALUControl = 5'b00110; // EOR - Nova implementação
+	    4'b1000: ALUControl = 5'b00111; // TST - Nova implementação
+  	    default: ALUControl = 5'bxxxxx;  // unimplemented 
       endcase
       // update flags if S bit is set 
 	// (C & V only updated for arith instructions)
       FlagW[1]      = Funct[0]; // FlagW[1] = S-bit
 	// FlagW[0] = S-bit & (ADD | SUB)
       FlagW[0]      = Funct[0] & 
-        (ALUControl == 4'b0000 | ALUControl == 4'b0001); 
+        (ALUControl == 5'b00000 | ALUControl == 5'b00001); 
     end else begin
-      ALUControl = 4'b0000; // add for non-DP instructions
+      ALUControl = 5'b00000; // add for non-DP instructions
       FlagW      = 2'b00; // don't update Flags
     end
               
@@ -313,7 +338,7 @@ module datapath(input  logic        clk, reset,
                 input  logic        RegWrite,
                 input  logic [1:0]  ImmSrc,
                 input  logic        ALUSrc,
-                input  logic [2:0]  ALUControl,
+                input  logic [4:0]  ALUControl,
                 input  logic        MemtoReg,
                 input  logic        PCSrc,
                 output logic [3:0]  ALUFlags,
@@ -420,7 +445,7 @@ endmodule
 
 
 module alu(input  logic [31:0] a, b,
-           input  logic [2:0]  ALUControl,
+           input  logic [4:0]  ALUControl,
            output logic [31:0] Result,
            output logic [3:0]  ALUFlags);
 
@@ -432,17 +457,19 @@ module alu(input  logic [31:0] a, b,
   assign sum = a + condinvb + ALUControl[0];
 
   always_comb
-    casex (ALUControl[2:0])
+    casex (ALUControl[4:0])
       //2'b0?: Result = sum;
-      3'b000: Result = sum;
-      3'b001: Result = sum;
-      3'b010: Result = a & b;
-      3'b011: Result = a | b;
+      5'b00000: Result = sum;
+      5'b00001: Result = sum;
+      5'b00010: Result = a & b;
+      5'b00011: Result = a | b;
+      5'b00110: Result = a ^ b;
+      5'b00111: Result = a & b;
     endcase
 
   assign neg      = Result[31];
   assign zero     = (Result == 32'b0);
-  assign carry    = (ALUControl[1] == 1'b0) & sum[32];
+  assign carry    = (ALUControl[1] == 1'b0) & sum[32]; // Tratar o carry aqui para fazer caso seja operação aritimética
   assign overflow = (ALUControl[1] == 1'b0) & 
                     ~(a[31] ^ b[31] ^ ALUControl[0]) & 
                     (a[31] ^ sum[31]); 
