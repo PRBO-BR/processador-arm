@@ -108,7 +108,9 @@
 //Implementação do LSL
 //SUB R4, R15, R15	E04F400F
 //ADD R5, R4, #0	E2845000
-//ADD R4, R4, #10	E284400A
+//ADD R3, R4, #10	E284300A
+//STR R3, [R5, #4]	E5853004
+//LDR R4, [R5, #4]	E5954004
 //ADD R5, R5, #5	E2855005
 //AND R6, R4, R5	E0046005
 //ORR R7, R4, R5	E1847005
@@ -117,6 +119,7 @@
 //TST R4, R5		E1140005
 //CMP R4, R5		E1540005
 //LSL R12, R4, #7	E1A0C384
+
 
 
 module testbench();
@@ -265,19 +268,13 @@ module decoder(input  logic [1:0] Op,
   	  2'b00: if (Funct[5]) begin
 				if (Funct[4:1] == 4'b1010 | Funct[4:1] == 4'b1000 ) begin
 				controls = 10'b0000100001; // Se for operação compare não atualiza o registrador
-				$display("Função CMP ou TST");
+				//$display("Função CMP ou TST");
 				end else //begin
-					//if (Funct[4:1] == 4'b1101) begin
-						controls = 10'b0000101001;
-					//end else			
-						//controls = 10'b0000101001;
-						//$display("não é função CMP");
-					//end
-				end	
-				 
+				controls = 10'b0000101001;
+			 
   	                        // Data processing register
 
-	         else begin
+	        end else begin
 				if (Funct[4:1] == 4'b1010 | Funct[4:1] == 4'b1000) begin
 				controls = 10'b0000000001;
 				end else 
@@ -302,11 +299,7 @@ module decoder(input  logic [1:0] Op,
   assign {RegSrc, ImmSrc, ALUSrc, MemtoReg, 
           RegW, MemW, Branch, ALUOp} = controls; 
 
-  
-
-
-
-          
+           
   // ALU Decoder             
   always_comb
     if (ALUOp) begin                 // which DP Instr?
