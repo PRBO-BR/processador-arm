@@ -76,26 +76,48 @@
 
 //Implementação de ALUControl com 4 bits
 // Implementação do EOR
+//SUB R4, R15, R15	E04F400F
+//ADD R5, R4, #0	E2845000
+//ADD R4, R4, #10	E284400A
+//ADD R5, R5, #5	E2855005
+//AND R6, R4, R5	E0046005
+//ORR R7, R4, R5	E1847005
+//SUB R8, R4, R5	E0448005
+//EOR R9, R4, R5	E0249005
 //Implementação do TST
-//E04F400F
-//E2845000
-//E284400A
-//E2855005
-//E0046005
-//E1847005
-//E0448005
-//E0249005
-//E114A005
-//Implementação do TST
-//E04F400F
-//E2845000
-//E284400A
-//E2855005
-//E0046005
-//E1847005
-//E0448005
-//E0249005
-//E114A005
+//SUB R4, R15, R15	E04F400F
+//ADD R5, R4, #0	E2845000
+//ADD R4, R4, #10	E284400A
+//ADD R5, R5, #5	E2855005
+//AND R6, R4, R5	E0046005
+//ORR R7, R4, R5	E1847005
+//SUB R8, R4, R5	E0448005
+//EOR R9, R4, R5	E0249005
+//TST R4, R5		E1140005
+//Implementação do CMP
+//SUB R4, R15, R15	E04F400F
+//ADD R5, R4, #0	E2845000
+//ADD R4, R4, #10	E284400A
+//ADD R5, R5, #5	E2855005
+//AND R6, R4, R5	E0046005
+//ORR R7, R4, R5	E1847005
+//SUB R8, R4, R5	E0448005
+//EOR R9, R4, R5	E0249005
+//TST R4, R5		E1140005
+//CMP R4, R5		E1540005
+//Implementação do LSL
+//SUB R4, R15, R15	E04F400F
+//ADD R5, R4, #0	E2845000
+//ADD R4, R4, #10	E284400A
+//ADD R5, R5, #5	E2855005
+//AND R6, R4, R5	E0046005
+//ORR R7, R4, R5	E1847005
+//SUB R8, R4, R5	E0448005
+//EOR R9, R4, R5	E0249005
+//TST R4, R5		E1140005
+//CMP R4, R5		E1540005
+//LSL R12, R4, #7	E1A0C384
+
 
 module testbench();
 
@@ -104,6 +126,8 @@ module testbench();
 
   logic [31:0] WriteData, DataAdr;
   logic        MemWrite;
+  logic [31:0] valorTeste;
+  logic shiftTeste;
 
   // instantiate device to be tested
   top dut(clk, reset, WriteData, DataAdr, MemWrite);
@@ -111,6 +135,8 @@ module testbench();
   // initialize test
   initial
     begin
+      //valorTeste <= 32'b1101011;
+      //shiftTeste <= 1'b1;
       reset <= 1; # 22; reset <= 0;
     end
 
@@ -123,6 +149,7 @@ module testbench();
   // check results
   always @(negedge clk)
     begin
+      //valorTeste = valorTeste >> shiftTeste;
       if(MemWrite) begin
         if(DataAdr === 100 & WriteData === 7) begin
           $display("Simulation succeeded");
@@ -235,9 +262,32 @@ module decoder(input  logic [1:0] Op,
   always_comb
   	case(Op)
   	                        // Data processing immediate
-  	  2'b00: if (Funct[5])  controls = 10'b0000101001; 
+  	  2'b00: if (Funct[5]) begin
+				if (Funct[4:1] == 4'b1010 | Funct[4:1] == 4'b1000 ) begin
+				controls = 10'b0000100001; // Se for operação compare não atualiza o registrador
+				$display("Função CMP ou TST");
+				end else //begin
+					//if (Funct[4:1] == 4'b1101) begin
+						controls = 10'b0000101001;
+					//end else			
+						//controls = 10'b0000101001;
+						//$display("não é função CMP");
+					//end
+				end	
+				 
   	                        // Data processing register
-  	         else           controls = 10'b0000001001; 
+
+	         else begin
+				if (Funct[4:1] == 4'b1010 | Funct[4:1] == 4'b1000) begin
+				controls = 10'b0000000001;
+				end else 
+					if (Funct[4:1] == 4'b1101) begin
+						controls = 10'b0011001001;
+						//$display(controls);
+					end else begin
+						controls = 10'b0000001001;
+					end
+				end
   	                        // LDR
   	  2'b01: if (Funct[0])  controls = 10'b0001111000; 
   	                        // STR
@@ -248,8 +298,14 @@ module decoder(input  logic [1:0] Op,
   	  default:              controls = 10'bx;          
   	endcase
 
+
   assign {RegSrc, ImmSrc, ALUSrc, MemtoReg, 
           RegW, MemW, Branch, ALUOp} = controls; 
+
+  
+
+
+
           
   // ALU Decoder             
   always_comb
@@ -265,6 +321,7 @@ module decoder(input  logic [1:0] Op,
 //      5'b00111: Result = a & b;
 
 ///////////
+	
       case(Funct[4:1]) 
   	    4'b0100: ALUControl = 5'b00000; // ADD
   	    4'b0010: ALUControl = 5'b00001; // SUB
@@ -272,6 +329,8 @@ module decoder(input  logic [1:0] Op,
   	    4'b1100: ALUControl = 5'b00011; // ORR
 	    4'b0001: ALUControl = 5'b00110; // EOR - Nova implementação
 	    4'b1000: ALUControl = 5'b00111; // TST - Nova implementação
+	    4'b1010: ALUControl = 5'b00101; // CMP - Nova implementação
+	    4'b1101: ALUControl = 5'b01111; // LSL - Nova implementação
   	    default: ALUControl = 5'bxxxxx;  // unimplemented 
       endcase
       // update flags if S bit is set 
@@ -279,7 +338,7 @@ module decoder(input  logic [1:0] Op,
       FlagW[1]      = Funct[0]; // FlagW[1] = S-bit
 	// FlagW[0] = S-bit & (ADD | SUB)
       FlagW[0]      = Funct[0] & 
-        (ALUControl == 5'b00000 | ALUControl == 5'b00001); 
+        (ALUControl == 5'b00000 | ALUControl == 5'b00001 | ALUControl == 5'b00101); 
     end else begin
       ALUControl = 5'b00000; // add for non-DP instructions
       FlagW      = 2'b00; // don't update Flags
@@ -358,7 +417,7 @@ module datapath(input  logic        clk, reset,
                 input  logic [31:0] ReadData);
 
   logic [31:0] PCNext, PCPlus4, PCPlus8;
-  logic [31:0] ExtImm, SrcA, SrcB, Result;
+  logic [31:0] ExtImm, SrcA, SrcB, Result, ALUA;
   logic [3:0]  RA1, RA2;
 
   // next PC logic
@@ -377,9 +436,13 @@ module datapath(input  logic        clk, reset,
   extend      ext(Instr[23:0], ImmSrc, ExtImm);
 
   // ALU logic
+  shift #(32)  shift1(SrcA, ExtImm, ImmSrc, ALUA);
   mux2 #(32)  srcbmux(WriteData, ExtImm, ALUSrc, SrcB);
-  alu         alu(SrcA, SrcB, ALUControl, 
+  
+  alu         alu(ALUA, SrcB, ALUControl, 
                   ALUResult, ALUFlags);
+  //alu         alu(SrcA, SrcB, ALUControl, 
+   //               ALUResult, ALUFlags);
 endmodule
 
 module regfile(input  logic        clk, 
@@ -414,6 +477,10 @@ module extend(input  logic [23:0] Instr,
       2'b01:   ExtImm = {20'b0, Instr[11:0]}; 
                // 24-bit two's complement shifted branch 
       2'b10:   ExtImm = {{6{Instr[23]}}, Instr[23:0], 2'b00}; 
+      2'b11:   if (1) begin
+			ExtImm = {27'b0, Instr[11:7]};
+			$display("Estendendo o extend");
+	       end
       default: ExtImm = 32'bx; // undefined
     endcase             
 endmodule
@@ -453,6 +520,23 @@ module mux2 #(parameter WIDTH = 8)
   assign y = s ? d1 : d0; 
 endmodule
 
+module shift #(parameter WIDTH = 8)
+             (input  logic [WIDTH-1:0] d0, d1, 
+              input  logic [1:0]  s, 
+              output logic [WIDTH-1:0] y);
+
+  logic valor;
+
+  always_comb
+  if (s == 2'b11) begin
+	valor = 1'b1;
+  end else begin
+	valor = 1'b0;
+  end
+
+  assign y = valor ? d1 : d0; 
+endmodule
+
 
 module alu(input  logic [31:0] a, b,
            input  logic [4:0]  ALUControl,
@@ -462,6 +546,8 @@ module alu(input  logic [31:0] a, b,
   logic        neg, zero, carry, overflow;
   logic [31:0] condinvb;
   logic [32:0] sum;
+  //logic [5:0] b1;
+  //logic [3:0] b2;
 
   assign condinvb = ALUControl[0] ? ~b : b;
   assign sum = a + condinvb + ALUControl[0];
@@ -475,6 +561,13 @@ module alu(input  logic [31:0] a, b,
       5'b00011: Result = a | b;
       5'b00110: Result = a ^ b;
       5'b00111: Result = a & b;
+      5'b00101: Result = sum;
+      //5'b01111: Result = a << b;
+      5'b01111: if (1) begin
+	 Result = b << a;
+	 $display(a);
+	 $display(b);
+	end
     endcase
 
   assign neg      = Result[31];
