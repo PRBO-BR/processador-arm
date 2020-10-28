@@ -266,10 +266,10 @@ module decoder(input  logic [1:0] Op,
   	case(Op)
   	                        // Data processing immediate
   	  2'b00: if (Funct[5]) begin
-				if (Funct[4:1] == 4'b1010 | Funct[4:1] == 4'b1000 ) begin
+				if (Funct[4:1] == 4'b1010 | Funct[4:1] == 4'b1000 ) 
 				controls = 10'b0000100001; // Se for operação compare não atualiza o registrador
 				//$display("Função CMP ou TST");
-				end else //begin
+				else //begin
 				controls = 10'b0000101001;
 			 
   	                        // Data processing register

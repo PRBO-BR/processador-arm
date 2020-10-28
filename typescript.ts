@@ -11,7 +11,7 @@ add wave -position end  sim:/testbench/dut/arm/c/cl/Flags
 add wave -position end  sim:/testbench/dut/arm/c/cl/CondEx
 add wave -position end  sim:/testbench/dut/arm/WriteData
 add wave -position end  sim:/testbench/dut/arm/MemWrite
-add wave -position 10  sim:/testbench/dut/arm/ReadData
+add wave -position end  sim:/testbench/dut/arm/ReadData
 add wave -position end  sim:/testbench/dut/arm/Instr
 add wave -position end  sim:/testbench/dut/arm/dp/rf/rf
 add wave -position end  sim:/testbench/dut/arm/dp/alu/a
@@ -24,14 +24,17 @@ add wave -position end  sim:/testbench/dut/dmem/RAM
 
 run
 
-SUB R4, R15, R15
-ADD R5, R4, #0
-ADD R4, R4, #10
-ADD R5, R5, #5
-AND R6, R4, R5
-ORR R7, R4, R5
-SUB R8, R4, R5
-EOR R9, R4, R5
-TST R4, R5
-CMP R4, R5
-LSL R12, R4, #7
+//Implementação do LSL
+//SUB R4, R15, R15	E04F400F
+//ADD R5, R4, #0	E2845000
+//ADD R3, R4, #10	E284300A
+//STR R3, [R5, #4]	E5853004
+//LDR R4, [R5, #4]	E5954004
+//ADD R5, R5, #5	E2855005
+//AND R6, R4, R5	E0046005
+//ORR R7, R4, R5	E1847005
+//SUB R8, R4, R5	E0448005
+//EOR R9, R4, R5	E0249005
+//TST R4, R5		E1140005
+//CMP R4, R5		E1540005
+//LSL R12, R4, #7	E1A0C384
